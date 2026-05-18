@@ -3,14 +3,10 @@
 from __future__ import annotations
 
 import os
-from pathlib import Path
 
 from dotenv import load_dotenv
 
-_HOMEWORK_DIR = Path(__file__).resolve().parent
-_PROJECT_ROOT = _HOMEWORK_DIR.parent
-load_dotenv(_PROJECT_ROOT / ".env")
-load_dotenv(_HOMEWORK_DIR / ".env", override=True)
+load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 
@@ -28,7 +24,7 @@ GENAPI_BASE_URL = os.getenv("GENAPI_BASE_URL", "https://proxy.gen-api.ru/v1").rs
 
 def validate_config() -> None:
     if not BOT_TOKEN:
-        raise RuntimeError("BOT_TOKEN не задан. Заполните .env в корне проекта (см. EnvExample).")
+        raise RuntimeError("BOT_TOKEN не задан. Заполните .env по образцу EnvExample.")
 
     if API_PROVIDER == "openai" and not OPENAI_API_KEY:
         raise RuntimeError("Для API_PROVIDER=openai нужен OPENAI_API_KEY.")

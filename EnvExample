@@ -1,25 +1,19 @@
-# CLI-скрипты и общий .env в корне проекта
-# Для бота см. также homework/EnvExample
+# Скопируйте в .env и заполните значения
 
-# Telegram (бот)
+# Telegram
 BOT_TOKEN=
 
-# OpenAI (openai_direct.py; бот при API_PROVIDER=openai)
+# LLM: openai или genapi
+API_PROVIDER=openai
+
+# OpenAI (при API_PROVIDER=openai)
 OPENAI_API_KEY=
-OPENAI_MODEL=gpt-3.5-turbo
 
-# ProxyAPI — только CLI openai_proxyapi.py
-PROXYAPI_API_KEY=
-PROXYAPI_BASE_URL=https://api.proxyapi.ru/openai/v1
-PROXYAPI_MODEL=gpt-3.5-turbo
-
-# GenAPI (genapi_chat.py; бот при API_PROVIDER=genapi)
+# GenAPI (при API_PROVIDER=genapi)
 GENAPI_KEY=
 GENAPI_BASE_URL=https://proxy.gen-api.ru/v1
-GENAPI_MODEL=
 
-# Бот: openai или genapi (один ключ LLM)
-API_PROVIDER=openai
+# Модель и параметры бота
 CHAT_MODEL=gpt-3.5-turbo
 DEFAULT_TEMPERATURE=0.7
 DEFAULT_MAX_TOKENS=1000
