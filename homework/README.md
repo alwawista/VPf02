@@ -9,10 +9,10 @@
 | Стек | aiogram 3 + `api_client.py` (OpenAI SDK) |
 | Контекст | `context_manager.py`, dict в памяти |
 | Команды | диалог; `/reset` и «очистить контекст» |
-| Ключи | `BOT_TOKEN` + `OPENAI_API_KEY` **или** `GENAPI_KEY` (`.env` в корне проекта) |
+| Ключи | `BOT_TOKEN` + `OPENAI_API_KEY` **или** `GENAPI_KEY` — [EnvExample](EnvExample) → `homework/.env` или `../.env` |
 | Логи | параметры запроса и ошибки в консоль (`logging`) |
 
-**Файлы:** [bot.py](bot.py), [config.py](config.py), [context_manager.py](context_manager.py), [api_client.py](api_client.py)
+**Файлы:** [bot.py](bot.py), [config.py](config.py), [context_manager.py](context_manager.py), [api_client.py](api_client.py), [EnvExample](EnvExample)
 
 **Запуск** (из корня проекта, после `pip install -r requirements.txt`):
 

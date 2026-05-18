@@ -11,7 +11,8 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Скопируйте `EnvExample` в `.env` в **корне** проекта. Для бота: `BOT_TOKEN` + **либо** `OPENAI_API_KEY`, **либо** `GENAPI_KEY` (`API_PROVIDER=openai` или `genapi`).
+- CLI: `EnvExample` → `.env` в корне проекта.
+- Бот: [homework/EnvExample](homework/EnvExample) → `homework/.env` или тот же `.env` в корне.
 
 ## CLI-скрипты
 

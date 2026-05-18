@@ -1,4 +1,7 @@
-# Telegram
+# CLI-скрипты и общий .env в корне проекта
+# Для бота см. также homework/EnvExample
+
+# Telegram (бот)
 BOT_TOKEN=
 
 # OpenAI (openai_direct.py; бот при API_PROVIDER=openai)
